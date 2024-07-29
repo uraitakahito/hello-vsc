@@ -4,9 +4,24 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "echo",
+      "label": "task one",
       "type": "shell",
-      "command": "echo Hello"
+      "command": "echo One!",
+    },
+    {
+      "label": "task two",
+      "type": "shell",
+      "command": "echo Two!",
+    },
+    {
+      "label": "Task Sequence",
+      "type": "shell",
+      "command": "echo Three!",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "task one",
+        "task two"
+      ] 
     }
   ]
 }
