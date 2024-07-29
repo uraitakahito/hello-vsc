@@ -21,7 +21,12 @@
       "dependsOn": [
         "task one",
         "task two"
-      ] 
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
     }
   ]
 }
