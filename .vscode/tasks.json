@@ -26,6 +26,11 @@
         "kind": "build",
         "isDefault": true
       },
+      "presentation": {
+        "reveal": "always",  // Terminal パネルを必ず開く
+        "clear": true,       // 実行前に Terminal をクリア
+        "echo": false        // タスク名をエコー表示しない
+      },
       "problemMatcher": []
     }
   ]
